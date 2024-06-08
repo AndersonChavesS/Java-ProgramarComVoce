@@ -38,4 +38,3 @@ public class NumeroPrimo {
       * ele (divisíveis por 1 ou por ele mesmo).
       * */
 
-

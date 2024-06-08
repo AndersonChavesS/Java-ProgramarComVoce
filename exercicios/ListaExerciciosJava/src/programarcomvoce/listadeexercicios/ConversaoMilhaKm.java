@@ -8,7 +8,7 @@ public class ConversaoMilhaKm {
         double milhas = sc.nextDouble();
         double quilometros = milhas * 1.609;
 
-        System.out.println("A distância convertida para quilometros é: " + quilometros + "km");
+        System.out.printf("A distância convertida para quilometros é: %.2fkm",  quilometros);
     }
 }
 /*

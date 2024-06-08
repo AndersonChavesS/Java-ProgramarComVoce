@@ -19,5 +19,5 @@ public class ProdutoImpares {
         System.out.println("Produto dos números ímpares(float): " + produtoFloat);
     }
 }
-//  6 - Imprima produto dos números de ímpares de 15 a 30, usando os tipos de
+//  6 - Imprima o produto dos números de ímpares de 15 a 30, usando os tipos de
 //  dados int e float.
