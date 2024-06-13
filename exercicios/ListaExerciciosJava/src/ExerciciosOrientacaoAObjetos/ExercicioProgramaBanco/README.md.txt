@@ -16,7 +16,7 @@
 	-Permite realizar depósitos em contas correntes.
 	-Atualiza o saldo da conta corrente após o depósito.
 
-	4. Saques
+	4. Realização de retiradas(saque)
 	-Permite realizar saques de contas correntes.
 	-Verifica se há saldo disponível ou se o limite de crédito é suficiente antes de efetuar o saque.
 
