@@ -3,7 +3,7 @@
 	O Programa Banco é um sistema simples de gerenciamento de contas correntes que permite aos 
 	usuários realizar operações básicas como depósitos, saques e verificação de saldo.
 
-	*Funcionalidades
+	*Funcionalidades*
 	1. Criação de Clientes:
 
 	-Permite registrar informações de novos clientes como CPF, nome, endereço e ano de nascimento.
@@ -27,6 +27,6 @@
 	-Mostra informações detalhadas sobre uma conta corrente, incluindo 
 	 número da conta, titulares, saldo atual, limite atual e status devedor.
 
-	*Uso
+	*Uso*
 	Para executar o programa, compile e execute a classe ProgramaBanco que 
 	contém o método main.
