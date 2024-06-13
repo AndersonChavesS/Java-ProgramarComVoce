@@ -1,5 +1,5 @@
-	**Programa Banco
-	*Descrição
+	**Programa Banco**
+	*Descrição*
 	O Programa Banco é um sistema simples de gerenciamento de contas correntes que permite aos 
 	usuários realizar operações básicas como depósitos, saques e verificação de saldo.
 
