@@ -17,7 +17,7 @@ public class Gato extends AnimalTerrestreAB {
     }
 
     @Override
-    public void morverse() {
+    public void moverse() {
         super.morverse(0);
     }
 

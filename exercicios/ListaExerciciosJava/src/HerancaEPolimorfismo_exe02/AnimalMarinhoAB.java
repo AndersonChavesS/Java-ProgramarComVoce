@@ -10,7 +10,7 @@ abstract class AnimalMarinhoAB extends AnimalAB {
 
     public abstract void comer();
 
-    public abstract void morverse();
+    public abstract void moverse();
 
     public abstract void dormir();
 }

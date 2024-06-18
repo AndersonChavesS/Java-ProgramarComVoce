@@ -15,7 +15,7 @@ public class Pombo extends AnimalVoadorAB {
     }
 
     @Override
-    public void morverse() {
+    public void moverse() {
         super.morverse(0);
     }
 

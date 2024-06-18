@@ -27,7 +27,7 @@ public class Main {
 
         cachorro.comer(0.5F);
         cachorro.andar();
-        cachorro.morverse(30);
+        cachorro.moverse(30);
         cachorro.dormir(13);
 
         System.out.println("========================================");
@@ -56,7 +56,7 @@ public class Main {
         System.out.println("Peso: " + gato.peso);
 
         gato.andar();
-        gato.morverse(30);
+        gato.moverse(30);
         gato.comer(0.2F);
         gato.dormir(15);
 
@@ -83,7 +83,7 @@ public class Main {
         System.out.println("Peso: " + elefante.peso);
 
         elefante.andar();
-        elefante.morverse(300);
+        elefante.moverse(300);
         elefante.comer(80);
         elefante.dormir(2);
 
@@ -110,7 +110,7 @@ public class Main {
         System.out.println("Peso: " + leao.peso);
 
         leao.andar();
-        leao.morverse(300);
+        leao.moverse(300);
         leao.comer(7);
         leao.dormir(10);
 
@@ -140,7 +140,7 @@ public class Main {
         System.out.println("Peso: " + pombo.peso);
 
         pombo.voar();
-        pombo.morverse(1);
+        pombo.moverse(1);
         pombo.comer(0.3F);
         pombo.dormir(18);
 
@@ -161,7 +161,7 @@ public class Main {
         System.out.println("Peso: " + peixe.peso);
 
         peixe.nadar();
-        peixe.morverse(250);
+        peixe.moverse(250);
         peixe.comer(.1F);
         peixe.dormir(3);
     }

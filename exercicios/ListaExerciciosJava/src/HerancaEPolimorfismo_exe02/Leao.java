@@ -17,7 +17,7 @@ public class Leao extends AnimalTerrestreAB {
     }
 
     @Override
-    public void morverse() {
+    public void moverse() {
         super.morverse(0);
     }
 

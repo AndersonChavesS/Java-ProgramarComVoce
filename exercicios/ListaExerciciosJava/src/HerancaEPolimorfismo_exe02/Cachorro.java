@@ -6,14 +6,15 @@ public class Cachorro extends AnimalTerrestreAB {
 
     }
 
-    @Override
-    public void morverse() {
-        super.morverse(0);
-    }
 
     @Override
     public void comer() {
         super.comer(0);
+    }
+
+    @Override
+    public void moverse() {
+        super.moverse(0);
     }
 
     @Override
@@ -25,4 +26,6 @@ public class Cachorro extends AnimalTerrestreAB {
     public void andar() {
         super.andar();
     }
+
+
 }

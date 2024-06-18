@@ -17,12 +17,15 @@ public class Elefante extends AnimalTerrestreAB {
     }
 
     @Override
-    public void morverse() {
+    public void moverse() {
         super.morverse(0);
     }
+
 
     @Override
     public void dormir() {
         super.dormir(0);
     }
+
+
 }

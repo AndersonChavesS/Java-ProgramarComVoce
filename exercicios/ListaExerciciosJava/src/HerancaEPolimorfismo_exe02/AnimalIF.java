@@ -4,7 +4,10 @@ public interface AnimalIF {
 
     public void comer(float massa);
 
-    public void morverse(float distancia);
+    public default void moverse(float distancia) {
+    }
+
+    void morverse(float distancia);
 
     public void dormir(float horas);
 }
