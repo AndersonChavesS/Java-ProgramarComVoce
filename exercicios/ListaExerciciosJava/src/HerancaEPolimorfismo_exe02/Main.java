@@ -7,10 +7,10 @@ public class Main {
         cachorro.nome = "Bob";
         System.out.println("Nome: " + cachorro.nome);
 
-        cachorro.tipo = "Beagle";
+        cachorro.tipo = "Beagles";
         System.out.println("Tipo: " + cachorro.tipo);
 
-        cachorro.idade = 2;
+        cachorro.idade = 3;
         System.out.println("Idade: " + cachorro.idade);
 
         cachorro.habitat = "terrestre";
@@ -19,16 +19,16 @@ public class Main {
         cachorro.quantidadeDePatas = 4;
         System.out.println("Quantidade de patas: " + cachorro.quantidadeDePatas);
 
-        cachorro.altura = 0.25F;
+        cachorro.altura = 0.8F;
         System.out.println("Altura: " + cachorro.altura);
 
-        cachorro.peso = 12.5F;
+        cachorro.peso = 10F;
         System.out.println("Peso: " + cachorro.peso);
 
-        cachorro.comer(0.5F);
         cachorro.andar();
-        cachorro.moverse(30);
-        cachorro.dormir(13);
+        cachorro.moverse(100);
+        cachorro.comer(3);
+        cachorro.dormir(12);
 
         System.out.println("========================================");
 
@@ -112,6 +112,7 @@ public class Main {
         leao.andar();
         leao.moverse(300);
         leao.comer(7);
+
         leao.dormir(10);
 
         System.out.println("========================================");

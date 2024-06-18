@@ -2,9 +2,6 @@ package HerancaEPolimorfismo_exe02;
 
 public class Elefante extends AnimalTerrestreAB {
 
-    public Elefante() {
-    }
-
 
     @Override
     public void andar() {
@@ -18,7 +15,7 @@ public class Elefante extends AnimalTerrestreAB {
 
     @Override
     public void moverse() {
-        super.morverse(0);
+        super.moverse(0);
     }
 
 

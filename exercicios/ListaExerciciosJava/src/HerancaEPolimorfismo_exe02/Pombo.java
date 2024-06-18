@@ -1,8 +1,7 @@
 package HerancaEPolimorfismo_exe02;
 
 public class Pombo extends AnimalVoadorAB {
-    public Pombo() {
-    }
+
 
     @Override
     public void voar() {
@@ -15,12 +14,15 @@ public class Pombo extends AnimalVoadorAB {
     }
 
     @Override
-    public void moverse() {
-        super.morverse(0);
+    public void moverse(float distancia) {
+        super.moverse(0);
     }
+
 
     @Override
     public void dormir() {
         super.dormir(0);
     }
+
+
 }

@@ -15,7 +15,8 @@ abstract class AnimalVoadorAB extends AnimalAB {
 
     public abstract void comer();
 
-    public abstract void moverse();
+    public void moverse(float distancia) {
+    }
 
     public abstract void dormir();
 }

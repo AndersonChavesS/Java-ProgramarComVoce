@@ -17,7 +17,7 @@ abstract class AnimalAB implements AnimalIF {
     }
 
     @Override
-    public void morverse(float distancia) {
+    public void moverse(float distancia) {
         System.out.println("Moveu-se a " + distancia + " metros.");
     }
 

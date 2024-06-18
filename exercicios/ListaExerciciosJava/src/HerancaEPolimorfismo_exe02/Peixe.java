@@ -1,8 +1,7 @@
 package HerancaEPolimorfismo_exe02;
 
 public class Peixe extends AnimalMarinhoAB {
-    public Peixe() {
-    }
+
 
     @Override
     public void nadar() {
@@ -16,7 +15,7 @@ public class Peixe extends AnimalMarinhoAB {
 
     @Override
     public void moverse() {
-        super.morverse(0);
+        super.moverse(0);
     }
 
     @Override
