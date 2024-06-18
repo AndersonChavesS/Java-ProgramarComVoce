@@ -9,20 +9,17 @@ public class Pombo extends AnimalVoadorAB {
     }
 
     @Override
-    public void comer() {
-        super.comer(0);
-    }
-
-    @Override
     public void moverse(float distancia) {
-        super.moverse(0);
+        super.moverse(distancia);
     }
-
 
     @Override
-    public void dormir() {
-        super.dormir(0);
+    public void comer(float massa) {
+        super.comer(massa);
     }
 
-
+    @Override
+    public void dormir(float horas) {
+        super.dormir(horas);
+    }
 }

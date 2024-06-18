@@ -9,18 +9,17 @@ public class Gato extends AnimalTerrestreAB {
     }
 
     @Override
-    public void comer() {
-        super.comer(0);
+    public void moverse(float distancia) {
+        super.moverse(distancia);
     }
 
     @Override
-    public void moverse() {
-        super.moverse(0);
+    public void comer(float massa) {
+        super.comer(massa);
     }
 
     @Override
-    public void dormir() {
-        super.dormir(0);
+    public void dormir(float horas) {
+        super.dormir(horas);
     }
-
 }

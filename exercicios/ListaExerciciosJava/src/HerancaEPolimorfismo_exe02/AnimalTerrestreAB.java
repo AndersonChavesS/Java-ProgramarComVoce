@@ -8,15 +8,6 @@ abstract class AnimalTerrestreAB extends AnimalAB {
     }
 
     public void andar() {
-        System.out.println(" está Andando...");
+        System.out.println(" Andando...");
     }
-
-    public abstract void comer();
-
-    public void moverse(float distancia) {
-    }
-
-    public abstract void moverse();
-
-    public abstract void dormir();
 }

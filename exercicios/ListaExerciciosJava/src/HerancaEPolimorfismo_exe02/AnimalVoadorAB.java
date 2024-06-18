@@ -10,13 +10,7 @@ abstract class AnimalVoadorAB extends AnimalAB {
     }
 
     public void voar() {
-        System.out.println(" está voando...");
+        System.out.println(" voando...");
     }
-
-    public abstract void comer();
-
-    public void moverse(float distancia) {
-    }
-
-    public abstract void dormir();
 }
+

@@ -5,15 +5,6 @@ abstract class AnimalMarinhoAB extends AnimalAB {
     }
 
     public void nadar() {
-        System.out.println(" está nadando...");
+        System.out.println(" Nadando");
     }
-
-    public abstract void comer();
-
-    public void moverse(float distancia) {
-    }
-
-    public abstract void moverse();
-
-    public abstract void dormir();
 }
