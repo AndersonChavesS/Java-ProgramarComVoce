@@ -73,78 +73,59 @@ public class LivrariaVirtual {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Digite o nome do cliente: ");
         String cliente = scanner.nextLine();
+        System.out.println("Quantidade de livros: ");
+        int qtdLivros = Integer.parseInt(scanner.nextLine());
 
-        System.out.println("Digite a quantidade de livros que deseja comprar: ");
-        int quantidade = scanner.nextInt();
-        scanner.nextLine();
-
-        Venda venda = new Venda(cliente);
-
-
-        for (int i = 0; i < MAX_VENDAS; i++) {
-            System.out.println("Digite o tipo de Livro (1 - Impresso; 2 - Eletrônico): ");
-            int tipo = scanner.nextInt();
-            scanner.nextLine();
-
-            if (tipo == 1) {
-                System.out.println("Digite o título do livro impresso: ");
-                String titulo = scanner.nextLine();
-                Impresso impresso = null;
-                for (int j = 0; j < numImpressos; j++) {
-                    if (impressos[j].getTituloDoLivro().equals(titulo)) {
-                        impresso = impressos[j];
-                        break;
-                    }
-                }
-                if (impresso != null) {
-                    venda.addLivro(impresso);
-                    finalizarVenda(venda);
-                } else {
-                    System.out.println("Livro impresso não encontrado.");
-                }
-            } else if (tipo == 2) {
-                System.out.println("Digite o título do livro eletrônico: ");
-                String titulo = scanner.nextLine();
-                Eletronico eletronico = null;
-                for (int j = 0; j < numEletronicos; j++) {
-                    if (eletronicos[j].getTituloDoLivro().equals(titulo)) {
-                        eletronico = eletronicos[j];
-                        break;
-                    }
-                }
-                if (eletronico != null) {
-                    venda.addLivro(eletronico);
-                    finalizarVenda(venda);
-
-                } else {
-                    System.out.println("Livro eletrônico não encontrado.");
-                }
-            } else {
-                if (tipo != 1 && tipo != 2)
-                    System.out.println("Tipo de livro inválido.");
-            }
-        }
-    }
-
-    public void finalizarVenda(Venda venda) {
         if (numVendas < MAX_VENDAS) {
+            Venda venda = new Venda(cliente);
             vendas[numVendas++] = venda;
-            System.out.println("Venda realizada com sucesso!");
 
+            for (int i = 0; i < qtdLivros; i++) {
+                System.out.println("Tipo de livro (Impresso/Eletrônico): ");
+                String tipo = scanner.nextLine();
+                if (tipo.equalsIgnoreCase("Impresso")) {
+                    listarLivrosImpressos();
+                    System.out.println("Escolha o índice do livro impresso: ");
+                    int indice = Integer.parseInt(scanner.nextLine());
+                    if (indice >= 0 && indice < numImpressos) {
+                        Impresso livro = impressos[indice];
+                        if (livro.getEstoque() > 0) {
+                            livro.atualizarEstoque();
+                            venda.addLivro(livro, 1);
+                        } else {
+                            System.out.println("Livro fora de estoque.");
+                        }
+                    } else {
+                        System.out.println("Indice inválido.");
+                    }
+                } else if (tipo.equalsIgnoreCase("Eletronico")) {
+                    listarLivrosEletronicos();
+                    System.out.println("Escolha o índice do livro eletronico: ");
+                    int indice = Integer.parseInt(scanner.nextLine());
+                    if (indice >= 0 && indice < numEletronicos) {
+                        Eletronico livro = eletronicos[indice];
+                        venda.addLivro(livro, 1);
+                    } else {
+                        System.out.println("Indice inválido");
+                    }
+                }
+            }
+            System.out.println("Venda realizada com sucesso!");
         } else {
-            System.out.println("Não há espaço para cadastrar mais vendas.");
+            System.out.println("Capacidade máxima de vendas atingida.");
         }
     }
+
 
     public void listarLivros() {
         System.out.println("Livros impressos: ");
         for (int i = 0; i < numImpressos; i++) {
-            System.out.println(impressos[i].toString());
+            System.out.println(impressos[i + 1].toString());
         }
 
         System.out.println("Livros eletrônicos: ");
         for (int i = 0; i < numEletronicos; i++) {
-            System.out.println(eletronicos[i].toString());
+            System.out.println(eletronicos[i + 1].toString());
         }
     }
 
@@ -155,11 +136,27 @@ public class LivrariaVirtual {
         }
     }
 
+    public void listarLivrosImpressos() {
+        System.out.println("Livros impressos: ");
+        for (int i = 0; i < numImpressos; i++) {
+            System.out.println(impressos[i].toString());
+        }
+    }
+
+    public void listarLivrosEletronicos() {
+        System.out.println("Livros eletrônicos: ");
+        for (int i = 0; i < numEletronicos; i++) {
+            System.out.println(eletronicos[i].toString());
+        }
+    }
+
     public static void main(String[] args) {
         LivrariaVirtual livraria = new LivrariaVirtual();
         Scanner scanner = new Scanner(System.in);
         int opcao = 0;
         do {
+            System.out.println("Livraria Virtual");
+            System.out.println("Menu");
             System.out.println("1 - Cadastrar livro");
             System.out.println("2 - Realizar venda");
             System.out.println("3 - Listar livros");
