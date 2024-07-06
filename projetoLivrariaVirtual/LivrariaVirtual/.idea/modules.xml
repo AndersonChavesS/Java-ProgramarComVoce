@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Livraria Virtual.iml" filepath="$PROJECT_DIR$/Livraria Virtual.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LivrariaVirtual.iml" filepath="$PROJECT_DIR$/LivrariaVirtual.iml" />
     </modules>
   </component>
 </project>
