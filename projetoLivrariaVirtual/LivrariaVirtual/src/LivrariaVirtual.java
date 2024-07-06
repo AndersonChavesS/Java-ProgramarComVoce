@@ -2,9 +2,9 @@ import java.sql.*;
 import java.util.Scanner;
 
 public class LivrariaVirtual {
-    private static final int MAX_IMPRESSOS = 100;
-    private static final int MAX_ELETRONICOS = 100;
-    private static final int MAX_VENDAS = 100;
+    private static final int MAX_IMPRESSOS = 10;
+    private static final int MAX_ELETRONICOS = 20;
+    private static final int MAX_VENDAS = 50;
 
     private Impresso[] impressos = new Impresso[MAX_IMPRESSOS];
     private Eletronico[] eletronicos = new Eletronico[MAX_ELETRONICOS];
@@ -141,7 +141,7 @@ public class LivrariaVirtual {
         for (int i = 0; i < qtdLivros; i++) {
             System.out.println("Tipo de livro (Impresso/Eletronico): ");
             String tipo = scanner.next();
-            scanner.nextLine(); // consume the newline
+            scanner.nextLine();
 
             if (tipo.equalsIgnoreCase("Impresso")) {
                 listarLivrosImpressos();
